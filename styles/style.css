@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-changa: "Changa", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --black-color: #2d2d2d;
+  --base-color: #ff6501;
+  --gray-color: #808080;
+  --light-gray: #b0b0b0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

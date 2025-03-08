@@ -1,0 +1,54 @@
+.career {
+  padding: 0px 20px;
+  padding-top: 20px;
+  margin-bottom: 8rem;
+}
+.career-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.career-title h4 {
+  font-size: 335px;
+  font-weight: 400;
+  font-family: var(--font-changa);
+  color: var(--base-color);
+  text-transform: uppercase;
+  line-height: 50px;
+  pointer-events: none;
+}
+.career-bg {
+  position: relative;
+}
+.career-bg img {
+  width: 400px;
+  height: 220px;
+  object-fit: cover;
+}
+.career-bg .label {
+  position: absolute;
+  top: 17%;
+  width: 100%;
+}
+.letter {
+  background-color: #fff;
+  color: var(--base-color);
+  font-family: var(--font-changa);
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 35px;
+  text-align: center;
+}
+.career-para p {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--base-color);
+  line-height: 30px;
+  margin-top: 20px;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  line-height: 22px;
+  margin-top: 10px;
+}

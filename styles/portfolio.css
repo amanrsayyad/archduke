@@ -1,0 +1,108 @@
+.portfolio {
+  padding: 0px 30px;
+  margin: 6.8rem 0rem 8rem;
+}
+.portfolio-title h4 {
+  text-align: center;
+  font-size: 280px;
+  font-weight: 400;
+  font-family: var(--font-changa);
+  color: var(--base-color);
+  text-transform: uppercase;
+  line-height: 50px;
+  pointer-events: none;
+}
+.sectors {
+  margin-top: 7rem;
+}
+.portfolio-tag {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+}
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  font-family: var(--font-roboto);
+}
+.bg-filter {
+  background-color: var(--base-color);
+  color: #fff;
+  padding: 10px 25px;
+}
+.border-filter {
+  padding: 7px 40px;
+  border: 2px dashed var(--base-color) !important;
+}
+.btn-filter {
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-right: 0.9rem;
+}
+.portfolio-info-title {
+  font-size: 60px;
+  font-family: var(--font-changa);
+  font-weight: 400;
+  line-height: 60px;
+  margin: 45px 0px 10px;
+}
+.portfolio-info-para {
+  font-size: 25px;
+  font-family: var(--font-changa);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+.portfolio-info-para span {
+  color: var(--base-color);
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.project-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.project-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-top: 2px dashed var(--base-color) !important;
+  border-bottom: 2px dashed var(--base-color) !important;
+  font-family: var(--font-roboto);
+}
+.project-data h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--black-color);
+  margin-bottom: 3px;
+}
+.project-data p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-color);
+}
+.project-data .arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base-color);
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+}
+.project-data .arrow-icon img {
+  width: 13px;
+  height: 13px;
+  margin-bottom: -1px;
+}
