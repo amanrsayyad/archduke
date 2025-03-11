@@ -43,24 +43,6 @@
   border: none;
   margin-right: 0.9rem;
 }
-.portfolio-info-title {
-  font-size: 60px;
-  font-family: var(--font-changa);
-  font-weight: 400;
-  line-height: 60px;
-  margin: 45px 0px 10px;
-}
-.portfolio-info-para {
-  font-size: 25px;
-  font-family: var(--font-changa);
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-  line-height: 30px;
-}
-.portfolio-info-para span {
-  color: var(--base-color);
-}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -58,6 +58,9 @@
 .footer-card ul li {
   margin-bottom: 5px;
 }
+.footer-card ul li p {
+  width: 75%;
+}
 .footer-card ul li a,
 .footer-card ul li p {
   color: var(--gray-color);

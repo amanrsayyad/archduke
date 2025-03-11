@@ -168,15 +168,3 @@
   font-weight: 500;
   font-size: 15px;
 }
-.contact-btn {
-  border: none;
-  outline: none;
-  background-color: var(--base-color);
-  padding: 7px 25px;
-  border-radius: 25px;
-  cursor: pointer;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 1rem;
-}

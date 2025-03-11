@@ -19,3 +19,49 @@ ul {
 a {
   text-decoration: none;
 }
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-title {
+  font-size: 60px;
+  font-family: var(--font-changa);
+  font-weight: 400;
+  line-height: 60px;
+  margin: 45px 0px 10px;
+}
+.info-para {
+  font-size: 25px;
+  font-family: var(--font-changa);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+.info-para span {
+  color: var(--base-color);
+}
+.base-btn {
+  padding: 9px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 450px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--base-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-roboto);
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1rem;
+}
