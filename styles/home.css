@@ -64,10 +64,6 @@
   padding: 0px 30px;
   margin: 5rem 0px;
 }
-.about-para {
-  margin: auto;
-  width: 70%;
-}
 .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -176,7 +172,9 @@
   position: absolute;
   top: -100%;
   right: 10%;
-  width: 200px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 .services-data:hover .img4 {
   position: absolute;
@@ -211,11 +209,6 @@
 .clients {
   padding: 0px 30px;
   margin: 5rem 0px;
-}
-.client-para {
-  text-align: center;
-  width: 70%;
-  margin: auto;
 }
 @keyframes slide {
   from {

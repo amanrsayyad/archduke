@@ -48,6 +48,14 @@ a {
 .info-para span {
   color: var(--base-color);
 }
+.align-para {
+  margin: auto;
+  width: 70%;
+}
+.contact-para-align {
+  margin: auto;
+  width: 90%;
+}
 .base-btn {
   padding: 9px 25px;
   border-radius: 25px;
