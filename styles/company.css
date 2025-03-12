@@ -1,0 +1,33 @@
+.company {
+  padding: 0px 20px;
+  padding-top: 20px;
+  margin-bottom: 5rem;
+}
+.company-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-title h4 {
+  font-size: 200px;
+  font-weight: 400;
+  font-family: var(--font-changa);
+  color: var(--base-color);
+  text-transform: uppercase;
+  line-height: 50px;
+  pointer-events: none;
+  margin-top: 2.8rem;
+}
+.company-para p {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--base-color);
+  line-height: 30px;
+  margin-top: 20px;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  line-height: 22px;
+  margin-top: 4.5rem;
+}

@@ -73,3 +73,43 @@ a {
   text-align: center;
   margin-top: 1rem;
 }
+
+/* listing styling started  */
+.listing-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+}
+.listing-company {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  margin: auto;
+}
+.listing-title {
+  font-size: 60px;
+  font-family: var(--font-changa);
+  font-weight: 500;
+  line-height: 50px;
+  color: var(--black-color);
+}
+.listing-red-title {
+  width: 55%;
+  margin: auto;
+}
+.listing-title-third {
+  text-align: center;
+  margin-left: 2.8rem;
+}
+.listing-red {
+  font-size: 60px;
+  font-family: var(--font-changa);
+  font-weight: 500;
+  line-height: 60px;
+  color: var(--base-color);
+}
