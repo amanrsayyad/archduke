@@ -172,8 +172,7 @@
   position: absolute;
   top: -100%;
   right: 10%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
   object-fit: cover;
 }
 .services-data:hover .img4 {
@@ -252,4 +251,58 @@
 .logos-slide img {
   height: 100px;
   margin: 0 40px;
+}
+
+/* cta styling started  */
+.cta {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1.4fr 2fr;
+  grid-gap: 1.5rem;
+  padding: 0px 30px;
+  margin: 5rem 0px;
+  margin-top: 13rem;
+}
+.cta-img-col3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta-col img:nth-child(1) {
+  margin-right: 3px;
+}
+.cta-img-col3 img,
+.cta-col2 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.cta-col2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: -2.5rem;
+}
+.cta-col2 img:nth-child(1) {
+  margin-right: 8px;
+}
+.cta-margin {
+  margin-bottom: 13px;
+}
+.cta-position {
+  position: absolute;
+  top: -60%;
+  left: 35%;
+}
+.cta-title {
+  font-size: 55px;
+  font-family: var(--font-changa);
+  font-weight: 500;
+  line-height: 55px;
+}
+.cta-para {
+  font-size: 17px;
+  font-family: var(--font-roboto);
+  font-weight: 400;
 }
