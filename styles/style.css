@@ -19,6 +19,18 @@ ul {
 a {
   text-decoration: none;
 }
+.d-flex {
+  display: flex;
+}
+.a-center {
+  align-items: center;
+}
+.j-center {
+  justify-content: center;
+}
+.j-between {
+  justify-content: space-between;
+}
 .text-center {
   text-align: center;
 }

@@ -1,6 +1,5 @@
 .company {
-  padding: 0px 20px;
-  padding-top: 20px;
+  padding: 20px;
   margin-bottom: 5rem;
 }
 .company-title {
@@ -30,4 +29,92 @@
   text-align: center;
   line-height: 22px;
   margin-top: 4.5rem;
+}
+
+.values {
+  padding: 20px 40px;
+  margin-bottom: 5rem;
+}
+.values-para {
+  font-size: 17px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  text-align: justify;
+  width: 40%;
+  margin: auto;
+}
+.value-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: -1.5rem;
+}
+.value-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray);
+  padding: 10px 10px 5px;
+  width: 600px;
+}
+.value-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.value-title p {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-roboto);
+  color: var(--base-color);
+  margin-right: 0.3rem;
+  margin-bottom: -0.2px;
+}
+.value-list h4 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--font-roboto);
+  color: var(--black-color);
+  text-transform: uppercase;
+}
+.value-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: var(--base-color);
+}
+.value-space:hover {
+  background-color: var(--base-color);
+  cursor: pointer;
+
+}
+.value-space:hover .value-circle {
+  background-color: #fff;
+}
+.value-space:hover .value-title p,
+.value-space:hover h4 {
+  color: #fff;
+}
+.value-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 3rem;
+}
+.value-card {
+  display: flex;
+}
+.value-card img {
+ width: 50%;
+ height: 100%;
+}
+.value-card p {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: var(--font-roboto);
+  color: var(--gray-color);
+  width: 50%;
+  margin-left: 1.5rem;
 }
