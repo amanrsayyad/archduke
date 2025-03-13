@@ -1,3 +1,4 @@
+/* company styling started  */
 .company {
   padding: 20px;
   margin-bottom: 5rem;
@@ -31,6 +32,7 @@
   margin-top: 4.5rem;
 }
 
+/* values styling started  */
 .values {
   padding: 20px 40px;
   margin-bottom: 5rem;
@@ -88,7 +90,6 @@
 .value-space:hover {
   background-color: var(--base-color);
   cursor: pointer;
-
 }
 .value-space:hover .value-circle {
   background-color: #fff;
@@ -106,8 +107,8 @@
   display: flex;
 }
 .value-card img {
- width: 50%;
- height: 100%;
+  width: 50%;
+  height: 100%;
 }
 .value-card p {
   font-size: 15px;
@@ -117,4 +118,107 @@
   color: var(--gray-color);
   width: 50%;
   margin-left: 1.5rem;
+}
+
+.history {
+  padding: 20px 200px 20px 80px;
+  margin: 5rem 0rem 7rem;
+}
+.history-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.history-data {
+  position: relative;
+}
+.vertical-line {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  height: 100%;
+  width: 2px;
+  background-color: var(--base-color);
+}
+.history-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 130px;
+}
+.history-content p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-color);
+  font-family: var(--font-roboto);
+  width: 250px;
+}
+.history-circle {
+  border-radius: 50px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--base-color);
+}
+.line-circle-1 {
+  position: absolute;
+  top: 30%;
+  left: -0.3%;
+}
+.line-circle-2 {
+  position: absolute;
+  top: 45%;
+  left: -0.3%;
+}
+.line-circle-3 {
+  position: absolute;
+  top: 47%;
+  left: -0.3%;
+}
+.year {
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--base-color);
+  font-family: var(--font-roboto);
+}
+.year-1 {
+  position: absolute;
+  top: 27%;
+  left: 4%;
+}
+.year-2 {
+  position: absolute;
+  top: 47%;
+  left: 4%;
+}
+.year-3 {
+  position: absolute;
+  top: 47%;
+  left: 4%;
+}
+.history-data img {
+  width: 600px;
+  height: 65%;
+  object-fit: cover;
+}
+.history-tagline {
+  padding: 0px 10px;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  line-height: 1.4;
+}
+.history-heading {
+  position: absolute;
+  top: 90%;
+  right: 1%;
+  width: 800px;
+}
+.history-heading h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
 }
