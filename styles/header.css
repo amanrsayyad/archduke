@@ -73,3 +73,11 @@
   color: #fff;
   margin-top: 40px;
 }
+@media only screen and (max-width: 991px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,7 +1,6 @@
 /* company styling started  */
 .company {
   padding: 20px;
-  margin-bottom: 5rem;
 }
 .company-title {
   display: flex;
@@ -30,6 +29,56 @@
   text-align: center;
   line-height: 22px;
   margin-top: 4.5rem;
+}
+.company-bg {
+  max-width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+}
+.company-bg img {
+  width: 100%;
+  height: 100%;
+}
+.company-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 3rem;
+}
+.company-container {
+  width: 70%;
+  margin: auto;
+}
+.company-nav .title {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--black-color);
+  margin-right: 4rem;
+}
+.company-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-list li {
+  position: relative;
+  padding: 10px 0px;
+  margin-right: 4rem;
+}
+.company-list li a {
+  font-family: var(--font-changa);
+  font-size: 16px;
+  color: var(--black-color);
+}
+.company-list li .activeLink {
+  position: absolute;
+  top: 95%;
+  left: 0%;
+  background-color: var(--base-color);
+  height: 3px;
+  width: 100%;
 }
 
 /* values styling started  */
@@ -121,7 +170,7 @@
 }
 
 .history {
-  padding: 20px 200px 20px 80px;
+  padding: 20px 200px 5rem 80px;
   margin: 5rem 0rem 7rem;
 }
 .history-grid {
@@ -223,15 +272,16 @@
   font-family: var(--font-roboto);
 }
 
+/* Team Styling Started  */
 .team {
-  padding: 20px 45px;
+  padding: 20px 100px;
   margin-bottom: 3rem;
 }
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .team-card img {
   width: 100%;
@@ -260,7 +310,133 @@
   color: var(--gray-color);
 }
 .team-social i {
- color: var(--base-color);
- font-size: 25px;
- margin-left: 0.5rem;
+  color: var(--base-color);
+  font-size: 25px;
+  margin-left: 0.5rem;
+}
+
+/* Location Styling Started  */
+.location-bg {
+  max-width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+.location-bg iframe {
+  width: 100%;
+  height: 400px;
+}
+.location {
+  padding: 0px 35px 2rem;
+}
+.location-main {
+  width: 50%;
+  margin: auto;
+}
+.location .title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 30px;
+  font-family: 500;
+  font-family: var(--font-changa);
+}
+.location .sub-title {
+  text-align: start;
+  font-size: 22px;
+  font-family: var(--font-changa);
+  color: var(--gray-color);
+}
+.location-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  color: var(--black-color);
+}
+.location-card img {
+  width: 250px;
+  height: 250px;
+  margin-right: 1rem;
+}
+.location-data {
+  width: 35%;
+}
+.location-data .card-title {
+  font-size: 35px;
+  line-height: 55px;
+  font-family: var(--font-changa);
+}
+.location-data .data {
+  font-family: var(--font-changa);
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* Faq styling started  */
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 35px 0rem;
+}
+.faq .label {
+  border-radius: 7px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: var(--base-color);
+  text-transform: uppercase;
+  font-family: var(--font-roboto);
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+.faq .faq-title {
+  font-family: var(--font-changa);
+  font-size: 40px;
+  font-weight: 500;
+}
+.faqs {
+  padding: 0px 20px;
+  padding-top: 50px;
+  margin-bottom: 5rem;
+  width: 70%;
+}
+.drop-title {
+  position: relative;
+  border-top: 1px solid var(--light-gray);
+  padding: 15px 20px;
+  font-family: var(--font-roboto);
+  width: 100%;
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--font-roboto);
+  text-transform: capitalize;
+}
+.drop-title:after {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  content: "\2795";
+  font-size: 13px;
+  color: var(--black-color);
+  float: right;
+  margin-left: 5px;
+}
+.drop-title.active:after {
+  content: "\2796";
+}
+.faq-panel {
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+}
+.faq-panel.show {
+  opacity: 1;
+  max-height: 850px;
+  padding: 0px 20px 20px;
 }
