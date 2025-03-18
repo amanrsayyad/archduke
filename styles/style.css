@@ -19,18 +19,6 @@ ul {
 a {
   text-decoration: none;
 }
-.d-flex {
-  display: flex;
-}
-.a-center {
-  align-items: center;
-}
-.j-center {
-  justify-content: center;
-}
-.j-between {
-  justify-content: space-between;
-}
 .text-center {
   text-align: center;
 }
@@ -41,6 +29,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.a-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .info-title {
   font-size: 60px;

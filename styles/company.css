@@ -169,6 +169,7 @@
   margin-left: 1.5rem;
 }
 
+/* History Styling Started  */
 .history {
   padding: 20px 200px 5rem 80px;
   margin: 5rem 0rem 7rem;
@@ -270,6 +271,76 @@
   font-size: 20px;
   font-weight: 500;
   font-family: var(--font-roboto);
+}
+/* Leadership Styling Started  */
+.leadership {
+  padding: 20px 100px;
+  margin-bottom: 0rem;
+}
+.leadership-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5rem;
+}
+.leadership-card img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.leadership-card-data h4 {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+.leadership-card-data .designation {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--gray-color);
+  margin-bottom: 1rem;
+}
+.leadership-card-data p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-roboto);
+  color: var(--black-color);
+  margin-bottom: 0.8rem;
+}
+.leadership-social {
+  padding: 15px 0px;
+  border-top: 2px dashed var(--base-color) !important;
+  border-bottom: 2px dashed var(--base-color) !important;
+  font-family: var(--font-roboto);
+  margin-top: 1.5rem;
+}
+.learn-more {
+  padding: 10px 20px;
+  background-color: var(--base-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin-right: 1rem;
+}
+.learn-more i {
+  margin-right: 0.5rem;
+}
+.social-icon {
+  padding: 10px 13px;
+  background-color: var(--base-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin-right: 1rem;
 }
 
 /* Team Styling Started  */
