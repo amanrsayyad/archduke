@@ -273,6 +273,21 @@
   font-family: var(--font-roboto);
 }
 /* Leadership Styling Started  */
+.leadership-title {
+  margin-bottom: 3rem;
+}
+.leadership-title-para {
+  width: 70%;
+  margin: auto;
+  margin-top: 0.7rem;
+}
+.leadership-title-para p {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 33px;
+  font-family: var(--font-changa);
+  color: var(--black-color);
+}
 .leadership {
   padding: 20px 100px;
   margin-bottom: 0rem;
@@ -450,16 +465,6 @@
   justify-content: center;
   flex-direction: column;
   padding: 0px 35px 0rem;
-}
-.faq .label {
-  border-radius: 7px;
-  padding: 5px 15px;
-  color: #fff;
-  background-color: var(--base-color);
-  text-transform: uppercase;
-  font-family: var(--font-roboto);
-  letter-spacing: 1.5px;
-  font-weight: 500;
 }
 .faq .faq-title {
   font-family: var(--font-changa);
