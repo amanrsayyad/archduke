@@ -41,11 +41,17 @@
   color: var(--black-color);
 }
 
+/* Contact Us button in mobile menu */
+.contact-us-btn {
+  display: none;
+}
+
 /* Responsive Header */
 @media only screen and (max-width: 991px) {
   .mobile-menu-btn {
     display: block;
-    margin-left: 120px;
+    position: absolute;
+    right: 6%;
   }
 
   .menu {
@@ -75,6 +81,31 @@
 
   .header-btn {
     display: none;
+  }
+
+  /* Show Contact Us button in mobile menu */
+  .contact-us-btn {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .contact-us-btn a {
+    color: var(--base-color) !important;
+    font-weight: 600 !important;
+    border: 1px solid var(--base-color);
+    padding: 7px 25px;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo img {
+    width: 150px;
+    height: 40px;
+  }
+
+  .mobile-menu-btn {
+    right: 4%;
   }
 }
 

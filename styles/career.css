@@ -52,6 +52,67 @@
   line-height: 22px;
   margin-top: 10px;
 }
+@media only screen and (max-width: 991px) {
+  .career {
+    padding: 0px 15px;
+  }
+  .career-title {
+    margin-top: 1.5rem;
+  }
+  .career-title h4 {
+    font-size: 80px;
+    line-height: 25px;
+  }
+  .career-bg {
+    display: none;
+  }
+  .career-para p {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .career-title h4 {
+    font-size: 60px;
+  }
+
+  .accordion {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .panel {
+    grid-template-columns: 1fr;
+  }
+
+  .job-location-info {
+    width: 100%;
+  }
+
+  .job-location-info iframe {
+    height: 300px;
+  }
+
+  .description p,
+  .pointers ul {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .career-title h4 {
+    font-size: 40px;
+  }
+
+  .accordion h4 {
+    font-size: 18px;
+  }
+
+  .career-form input {
+    width: 100%;
+  }
+}
 
 /* listing styling started  */
 .job-listing {
@@ -171,7 +232,31 @@
   color: var(--base-color);
   margin-right: 0.4rem;
 }
-
+@media only screen and (max-width: 991px) {
+  .accordion h4 {
+    font-size: 16px;
+  }
+  .panel {
+    grid-template-columns: 1fr;
+  }
+  .panel.show {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    padding: 20px;
+    max-height: 100%;
+  }
+  .job-desc {
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .job-location-info {
+    width: 100%;
+  }
+  .job-location-info iframe {
+    height: 300px;
+  }
+}
 .career-form {
   display: flex;
   align-items: center;
@@ -196,4 +281,31 @@
   color: var(--gray-color);
   font-weight: 500;
   font-size: 14px;
+}
+@media only screen and (max-width: 991px) {
+  .career-form input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .panel.show {
+    padding: 15px 0;
+  }
+
+  .job-desc {
+    margin-bottom: 25px;
+  }
+
+  .description p {
+    width: 100%;
+  }
+
+  .pointers ul {
+    width: 100%;
+  }
+
+  .pointers ul li {
+    margin-bottom: 10px;
+  }
 }

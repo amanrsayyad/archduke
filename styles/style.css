@@ -97,13 +97,21 @@ a {
 }
 @media only screen and (max-width: 991px) {
   .info-title {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 55px;
   }
   .info-para {
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
+  }
+  .align-para,
+  .contact-para-align {
+    margin: auto;
+    width: 100%;
+  }
+  .base-btn {
+    width: 100%;
   }
 }
 
@@ -145,6 +153,23 @@ a {
   font-weight: 500;
   line-height: 60px;
   color: var(--base-color);
+}
+@media only screen and (max-width: 991px) {
+  .listing-flex {
+    width: 80%;
+    text-align: center;
+  }
+  .listing-company {
+    width: 80%;
+  }
+  .listing-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .listing-red {
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
 
 /* cta styling started  */

@@ -516,3 +516,81 @@
   max-height: 850px;
   padding: 0px 20px 20px;
 }
+
+/* Add responsive styles for company pages */
+@media only screen and (max-width: 991px) {
+  .company-title h4 {
+    font-size: 150px;
+  }
+
+  .company-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-list {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .company-list li {
+    margin: 10px;
+  }
+
+  .value-grid {
+    flex-direction: column;
+  }
+
+  .value-list {
+    margin-top: 30px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .company-title h4 {
+    font-size: 100px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-data img {
+    margin-top: 30px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faqs {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .company-title h4 {
+    font-size: 70px;
+  }
+
+  .listing-title {
+    font-size: 32px;
+  }
+
+  .listing-red {
+    font-size: 24px;
+  }
+}
