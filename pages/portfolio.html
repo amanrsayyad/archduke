@@ -21,6 +21,9 @@
       <div class="logo">
         <img src="../assets/ArchDuke-Images/logo.jpeg" alt="" />
       </div>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="menu">
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -49,6 +52,14 @@
           <div class="btn-filter border-filter">Industrial</div>
         </div>
       </div>
+      <div class="status">
+        <p class="portfolio-tag">Status</p>
+        <div class="filters">
+          <div class="btn-filter bg-filter">All</div>
+          <div class="btn-filter border-filter">Ongoing</div>
+          <div class="btn-filter border-filter">Completed</div>
+        </div>
+      </div>
 
       <div class="projects">
         <h3 class="info-title text-center">Featured projects</h3>
@@ -65,7 +76,7 @@
           </span>
         </p>
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card" data-status="Completed">
             <img src="/assets/Projects/Amanora Gateway Tower.jpeg" alt="" />
             <div class="project-data">
               <div>
@@ -77,7 +88,7 @@
               </a>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-status="Ongoing">
             <img
               src="/assets/Projects/Capital Land Hyderabad Hitec City.jpeg"
               alt=""
@@ -92,7 +103,7 @@
               </a>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-status="Completed">
             <img
               src="/assets/Projects/CourtYard By Marriott Nerul.jpeg"
               alt=""
@@ -107,7 +118,7 @@
               </a>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-status="Ongoing">
             <img src="/assets/Projects/Naman Worli.jpeg" alt="" />
             <div class="project-data">
               <div>
@@ -119,7 +130,7 @@
               </a>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-status="Completed">
             <img src="/assets/Projects/Peninsula Salsette 27.jpeg" alt="" />
             <div class="project-data">
               <div>
@@ -131,7 +142,7 @@
               </a>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-status="Ongoing">
             <img
               src="/assets/Projects/SWIFT EBISU Tech Park Banglore.jpeg"
               alt=""
@@ -139,7 +150,7 @@
             <div class="project-data">
               <div>
                 <h6>SWIFT EBISU Tech Park Banglore</h6>
-                <p>Residential</p>
+                <p>Industrial</p>
               </div>
               <a href="/pages/project-detail.html" class="arrow-icon">
                 <img src="/assets/right-up.png" alt="" />
@@ -209,5 +220,9 @@
       </div>
     </div>
     <!-- FOOTER SECTION END -->
+
+    <!-- Scripts -->
+    <script src="../js/portfolio.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
