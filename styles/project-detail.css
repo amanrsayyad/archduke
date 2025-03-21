@@ -160,3 +160,128 @@
   font-weight: 500;
   font-family: var(--font-roboto);
 }
+
+/* Add responsive styles for project detail page */
+@media only screen and (max-width: 991px) {
+  .project-title h4 {
+    font-size: 120px;
+    margin-top: 3rem;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .project-bg {
+    width: 80%;
+    height: 400px;
+    margin-top: 4rem;
+  }
+
+  .project-para {
+    width: 70%;
+  }
+
+  .project-detail-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 6rem;
+  }
+
+  .project-img-center {
+    margin: 30px 0;
+  }
+
+  .project-detail-card .card {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .project-col-img img {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .project-heading {
+    position: static;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .project-heading h4 {
+    font-size: 18px;
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-title h4 {
+    font-size: 90px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .project-bg {
+    width: 90%;
+    height: 350px;
+  }
+
+  .project-para {
+    width: 90%;
+  }
+
+  .project-img-center {
+    flex-direction: column;
+  }
+
+  .project-img-center img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .info-pos-1,
+  .info-pos-2 {
+    position: static;
+    text-align: center;
+    margin: 20px auto;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .project-title h4 {
+    font-size: 60px;
+    line-height: 30px;
+  }
+
+  .label {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .project-bg {
+    width: 100%;
+    height: 250px;
+    margin-top: 3rem;
+  }
+
+  .project-para {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .project-detail-card .card {
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .project-heading h4 {
+    font-size: 16px;
+  }
+}
