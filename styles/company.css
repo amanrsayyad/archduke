@@ -520,48 +520,76 @@
 /* Add responsive styles for company pages */
 @media only screen and (max-width: 991px) {
   .company-title h4 {
-    font-size: 150px;
+    font-size: 100px;
+    margin-top: 1.5rem;
+  }
+
+  .company-para p {
+    width: 100%;
+    margin-top: 2rem;
   }
 
   .company-container {
+    width: 90%;
     flex-direction: column;
     align-items: center;
   }
+  .company-nav .title {
+    display: none;
+  }
 
   .company-list {
-    margin-top: 20px;
+    margin-top: 0px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .company-list li {
-    margin: 10px;
+    margin: 10px 20px 10px 0;
+  }
+
+  .company-list li .activeLink {
+    position: absolute;
+    top: 115%;
+    left: 0%;
+  }
+
+  .values {
+    padding: 20px 15px;
+  }
+
+  .values .info-title {
+    margin: 0px 0px 10px;
   }
 
   .value-grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .value-list {
     margin-top: 30px;
   }
 
-  .leadership-grid {
-    grid-template-columns: 1fr;
+  .value-list li {
+    width: 90vw;
   }
 
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .company-title h4 {
-    font-size: 100px;
+  .value-space {
+    width: 100%;
   }
 
-  .team-grid {
-    grid-template-columns: 1fr;
+  .values-para {
+    font-size: 17px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    text-align: justify;
+    width: 100%;
+    margin: auto;
+  }
+
+  .history {
+    padding: 20px 40px 5rem 40px;
+    margin: 3rem 0rem 5rem;
   }
 
   .history-grid {
@@ -569,7 +597,103 @@
   }
 
   .history-data img {
+    width: 100%;
+    height: auto;
+  }
+
+  .history-heading {
+    position: relative;
+    width: 100%;
     margin-top: 30px;
+    right: 0;
+    top: 0;
+  }
+
+  .history-content p {
+    margin-left: 5.5rem;
+  }
+
+  .history-heading h4 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+  }
+
+  .year-1 {
+    top: 38%;
+  }
+  .year-2 {
+    top: 40%;
+  }
+  .year-3 {
+    top: 40%;
+  }
+
+  .leadership {
+    padding: 20px 15px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-title-para {
+    width: 90%;
+  }
+
+  .leadership-title-para p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center !important;
+  }
+
+  .team {
+    padding: 20px 15px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq {
+    padding: 0px 15px 0rem;
+  }
+
+  .faq .faq-title {
+    font-size: 22px;
+  }
+
+  .faqs {
+    padding: 0px;
+  }
+
+  .location {
+    padding: 0px 15px 2rem;
+  }
+
+  .location .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .location .sub-title {
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .company-title h4 {
+    font-size: 65px;
+  }
+
+  .company-para p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 
   .faq-title {
@@ -578,19 +702,89 @@
 
   .faqs {
     width: 100%;
+    padding-top: 30px;
+  }
+
+  .value-card {
+    flex-direction: column;
+  }
+
+  .value-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .value-card p {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .location-grid {
+    flex-direction: column;
+  }
+
+  .location-data {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .location-main {
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .company-title h4 {
-    font-size: 70px;
+    font-size: 45px;
+    margin-top: 0rem;
+  }
+
+  .company-list li {
+    margin: 9px 10px 10px 10px;
+  }
+
+  .company-list li a {
+    font-size: 14px;
   }
 
   .listing-title {
     font-size: 32px;
+    line-height: 35px;
   }
 
   .listing-red {
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .history {
+    padding: 20px 15px 2rem 15px;
+  }
+
+  .leadership-card-data h4 {
+    font-size: 22px;
+  }
+
+  .leadership-card-data .designation {
+    font-size: 16px;
+  }
+
+  .location-data .card-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .drop-title {
+    font-size: 13px;
+    padding: 12px 15px;
+  }
+
+  .faq-panel {
+    font-size: 13px;
+  }
+
+  .faq-panel.show {
+    padding: 0px 15px 20px;
   }
 }

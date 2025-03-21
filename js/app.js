@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Accordion functionality for job listings
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
 
+  // FAQ accordion functionality
   var acc = document.getElementsByClassName("drop-title");
   var i;
 

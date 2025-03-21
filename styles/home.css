@@ -253,3 +253,188 @@
   margin: 0 40px;
 }
 
+/* Update CTA section */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-card {
+  flex: 1 1 33.33%;
+  min-width: 300px;
+}
+
+/* Add responsive styles for home page */
+@media only screen and (max-width: 991px) {
+  .hero {
+    padding: 0px 15px;
+    padding-top: 20px;
+  }
+
+  .hero-title {
+    font-size: 100px;
+    line-height: 40px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    padding: 0px;
+  }
+
+  .hero-compo {
+    margin-top: 0rem;
+  }
+
+  .hero-strip {
+    display: none;
+  }
+
+  .col1,
+  .col2,
+  .col3 {
+    margin-bottom: 15px;
+  }
+
+  .col3 {
+    align-items: flex-start;
+  }
+
+  .hero-strip p {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card video {
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .about-stats {
+    height: 120px;
+  }
+
+  .stat-number {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .about-stats img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .services-data h5 {
+    font-size: 22px;
+  }
+
+  .services-data:hover .img1,
+  .services-data:hover .img2,
+  .services-data:hover .img3,
+  .services-data:hover .img4,
+  .services-data:hover .img5,
+  .services-data:hover .img6 {
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .logos:before {
+    left: 0;
+    background: none;
+  }
+  .logos:after {
+    right: 0;
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 76px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .hero-strip p {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+
+  .about-us,
+  .services,
+  .clients {
+    padding: 0px 15px;
+    margin: 3rem 0px;
+  }
+
+  .services-data h5 {
+    font-size: 22px;
+  }
+
+  .logos-slide img {
+    height: 70px;
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 36px;
+    line-height: 25px;
+  }
+
+  .hero-grid {
+    font-size: 14px;
+  }
+
+  .hero-strip {
+    overflow-x: hidden;
+  }
+
+  .hero-strip p {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .info-title {
+    font-size: 24px;
+  }
+
+  .info-para {
+    font-size: 17px;
+  }
+
+  .services-data h5 {
+    font-size: 16px;
+  }
+
+  .services-data label {
+    font-size: 12px;
+  }
+
+  .services-data:hover .img1,
+  .services-data:hover .img2,
+  .services-data:hover .img3,
+  .services-data:hover .img4,
+  .services-data:hover .img5,
+  .services-data:hover .img6 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .logos-slide img {
+    height: 50px;
+    margin: 0 15px;
+  }
+}

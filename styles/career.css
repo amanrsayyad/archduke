@@ -55,35 +55,50 @@
 @media only screen and (max-width: 991px) {
   .career {
     padding: 0px 15px;
+    margin-bottom: 3rem;
   }
+
   .career-title {
     margin-top: 1.5rem;
   }
+
   .career-title h4 {
     font-size: 80px;
     line-height: 25px;
   }
+
   .career-bg {
     display: none;
   }
+
   .career-para p {
     width: 100%;
     margin-top: 35px;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .career-title h4 {
-    font-size: 60px;
-  }
 
   .accordion {
-    grid-template-columns: 1fr;
-    padding: 10px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .accordion h4 {
+    font-size: 16px;
   }
 
   .panel {
     grid-template-columns: 1fr;
+  }
+
+  .panel.show {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    padding: 20px;
+    max-height: 100%;
+  }
+
+  .job-desc {
+    order: -1;
+    margin-bottom: 20px;
   }
 
   .job-location-info {
@@ -94,23 +109,114 @@
     height: 300px;
   }
 
-  .description p,
+  .career-form input {
+    width: 80%;
+  }
+
+  .listing-flex,
+  .listing-red-title,
+  .listing-title-third {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .career-title h4 {
+    font-size: 60px;
+  }
+
+  .job-listing {
+    padding: 0 15px;
+    padding-top: 30px;
+  }
+
+  .accordion {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .accordion:after {
+    right: 3%;
+  }
+
+  .panel.show {
+    padding: 15px 0;
+  }
+
+  .job-desc {
+    margin-bottom: 25px;
+  }
+
+  .description p {
+    width: 100%;
+  }
+
   .pointers ul {
     width: 100%;
+  }
+
+  .pointers ul li {
+    margin-bottom: 10px;
+  }
+
+  .career-form input {
+    width: 90%;
+  }
+
+  .info-title {
+    font-size: 24px;
+  }
+
+  .info-para {
+    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .career-title h4 {
-    font-size: 40px;
+    font-size: 80px;
+  }
+
+  .accordion {
+    padding: 10px 5px;
   }
 
   .accordion h4 {
-    font-size: 18px;
+    font-size: 15px;
+  }
+
+  .panel.show {
+    padding: 10px 0;
+  }
+
+  .job-title {
+    font-size: 13px;
+  }
+
+  .description p {
+    font-size: 13px;
+  }
+
+  .pointers ul li {
+    font-size: 13px;
+  }
+
+  .career .info-para {
+    font-size: 15px;
   }
 
   .career-form input {
     width: 100%;
+  }
+
+  .listing-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .listing-red {
+    font-size: 30px;
+    line-height: 33px;
   }
 }
 
