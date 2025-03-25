@@ -272,75 +272,102 @@ a {
 }
 @media only screen and (max-width: 991px) {
   .cta {
-    flex-direction: column;
-    margin-top: 8rem;
     padding: 0px 15px;
+    margin: 5rem 0px;
+    padding-top: 10rem;
   }
-
   .cta-position {
-    position: static;
-    text-align: center;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    text-align: start;
   }
-
-  .cta-card {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
   .cta .cta-card:nth-child(1),
   .cta .cta-card:nth-child(3) {
     display: none;
   }
-
-  .cta-para {
-    margin: 0 auto;
+  .cta-title {
+    font-size: 45px;
+    line-height: 45px;
   }
-
+  .cta-para {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: start;
+  }
   .base-btn {
-    margin: 20px auto;
+    margin-left: -25px;
+    width: 250px;
   }
 }
 @media only screen and (max-width: 480px) {
   .cta {
-    margin-top: 7rem;
+    padding: 0px 15px;
+    margin: 5rem 0px;
+    padding-top: 5rem;
   }
   .cta-position {
     position: absolute;
-    top: -22%;
-    left: 3%;
+    top: -10%;
+    left: 6%;
+    text-align: start;
   }
-  .cta-title {
-    font-size: 35px;
-    line-height: 35px;
+  .cta-para {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    margin-left: -25px;
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .info-title {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background: #222;
+}
+.icon-bar .facebook {
+  background: #3b5998;
+}
+.icon-bar .twitter {
+  background: #55acee;
+}
+.icon-bar .linkedin {
+  background: #007bb5;
+}
+.icon-bar .instagram {
+  background: var(--base-color);
+}
 
-  .info-para {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .base-btn {
-    padding: 8px 20px;
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .listing-title {
-    font-size: 28px;
-    line-height: 32px;
-  }
-
-  .listing-red {
-    font-size: 20px;
-    line-height: 24px;
-  }
+.whatsapp-icon {
+  position: fixed;
+  bottom: 5%;
+  right: 0.5%;
+  z-index: 1000;
+}
+.whatsapp-icon .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+.whatsapp-icon .icon-container i {
+  font-size: 27px;
+  color: #fff;
 }
