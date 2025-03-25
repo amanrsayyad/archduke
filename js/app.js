@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
   const menu = document.querySelector(".menu");
+  const companyDropdown = document.querySelector(".company-dropdown");
 
   if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener("click", function () {
@@ -42,4 +43,23 @@ document.addEventListener("DOMContentLoaded", function () {
       this.nextElementSibling.classList.toggle("show");
     };
   }
+
+  // Handle company dropdown in mobile view
+  if (companyDropdown) {
+    const companyLink = companyDropdown.querySelector("a");
+
+    companyLink.addEventListener("click", (e) => {
+      if (window.innerWidth <= 991) {
+        e.preventDefault();
+        companyDropdown.classList.toggle("active");
+      }
+    });
+  }
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!companyDropdown?.contains(e.target)) {
+      companyDropdown?.classList.remove("active");
+    }
+  });
 });
