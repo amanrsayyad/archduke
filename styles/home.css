@@ -320,10 +320,19 @@
     line-height: 35px;
     text-align: center;
   }
-
-  .hero-strip p {
-    font-size: 16px;
-    margin-right: 15px;
+  .hero-compo {
+    margin-top: 0rem;
+  }
+  .hero-strip {
+    display: none;
+  }
+  .hero-video {
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  .hero-video img {
+    object-fit: cover;
   }
 
   .about-us,
@@ -344,8 +353,12 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .hero {
+    padding: 0px 15px;
+    padding-top: 40px;
+  }
   .hero-title {
-    font-size: 36px;
+    font-size: 35px;
     line-height: 25px;
   }
 
