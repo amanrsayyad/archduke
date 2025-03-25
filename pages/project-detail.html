@@ -16,6 +16,12 @@
     />
   </head>
   <body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+      <img src="../assets/ArchDuke-Images/logo.jpeg" alt="" />
+      <p>Loading...</p>
+    </div>
+
     <!-- HEADER SECTION START -->
     <div class="header">
       <div class="logo">
@@ -27,7 +33,16 @@
       <div class="menu">
         <ul>
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/pages/company.html">Company</a></li>
+          <li class="company-dropdown">
+            <a href="/pages/company.html">Company</a>
+            <div class="company-dropdown-content">
+              <a href="/pages/company.html">About</a>
+              <a href="/pages/sub-pages/leadership.html">Leadership</a>
+              <a href="/pages/sub-pages/mission.html">Mission</a>
+              <a href="/pages/sub-pages/faq.html">FAQ</a>
+              <a href="/pages/sub-pages/location.html">Location</a>
+            </div>
+          </li>
           <li><a href="/pages/portfolio.html">Portfolio</a></li>
           <li><a href="/pages/career.html">Career</a></li>
           <li class="contact-us-btn">
@@ -219,10 +234,18 @@
         <div class="footer-card">
           <h4 class="link-title">Socials</h4>
           <ul>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            </li>
           </ul>
         </div>
       </div>

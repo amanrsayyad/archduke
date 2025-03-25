@@ -185,6 +185,7 @@
   .project-detail-grid {
     grid-template-columns: 1fr;
     margin-bottom: 6rem;
+    padding: 0px 15px;
   }
 
   .project-img-center {
@@ -239,10 +240,15 @@
     flex-direction: column;
   }
 
+  .project-img-center {
+    margin: 10px 0;
+  }
+
   .project-img-center img {
     width: 100%;
-    height: auto;
+    height: 300px;
     margin: 10px 0;
+    object-fit: cover;
   }
 
   .info-pos-1,

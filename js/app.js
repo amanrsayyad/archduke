@@ -1,3 +1,18 @@
+// Loader functionality
+window.addEventListener("load", function () {
+  const loaderWrapper = document.querySelector(".loader-wrapper");
+
+  // Add a small delay to ensure smooth transition
+  setTimeout(() => {
+    loaderWrapper.classList.add("fade-out");
+
+    // Remove the loader from DOM after fade out
+    setTimeout(() => {
+      loaderWrapper.style.display = "none";
+    }, 500);
+  }, 500);
+});
+
 // Mobile menu toggle and accordion functionality
 document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
