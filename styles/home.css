@@ -44,7 +44,7 @@
   font-family: var(--font-changa);
   line-height: 40px;
   text-transform: uppercase;
-  margin-right: 31px;
+  margin-right: 25px;
 }
 .hero-strip p:nth-child(9) {
   margin-right: 0px;
@@ -384,7 +384,7 @@
   }
 
   .services-data h5 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .services-data label {
