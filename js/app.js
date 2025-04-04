@@ -78,3 +78,71 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Testimonial slider functionality
+const testimonialTrack = document.querySelector(".testimonial-track");
+const testimonialCards = document.querySelectorAll(".testimonial-card");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+const dotsContainer = document.querySelector(".testimonial-dots");
+
+let currentIndex = 0;
+const cardsPerSlide = window.innerWidth <= 991 ? 1 : 2;
+const totalSlides = Math.ceil(testimonialCards.length / cardsPerSlide);
+
+// Create dots
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  if (i === 0) dot.classList.add("active");
+  dot.addEventListener("click", () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+}
+
+const dots = document.querySelectorAll(".dot");
+
+function updateDots() {
+  dots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentIndex);
+  });
+}
+
+function goToSlide(index) {
+  currentIndex = index;
+  testimonialTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+  updateDots();
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  goToSlide(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  goToSlide(currentIndex);
+}
+
+// Event listeners
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+
+// Auto slide
+let slideInterval = setInterval(nextSlide, 5000);
+
+// Pause auto slide on hover
+testimonialTrack.addEventListener("mouseenter", () => {
+  clearInterval(slideInterval);
+});
+
+testimonialTrack.addEventListener("mouseleave", () => {
+  slideInterval = setInterval(nextSlide, 5000);
+});
+
+// Handle window resize
+window.addEventListener("resize", () => {
+  const newCardsPerSlide = window.innerWidth <= 991 ? 1 : 2;
+  if (newCardsPerSlide !== cardsPerSlide) {
+    location.reload(); // Reload page to reinitialize slider with new layout
+  }
+});
