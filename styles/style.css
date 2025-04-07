@@ -109,7 +109,7 @@ a {
 }
 .align-para {
   margin: auto;
-  width: 70%;
+  padding: 0px 150px;
 }
 .contact-para-align {
   margin: auto;
@@ -154,7 +154,7 @@ a {
 
   .align-para {
     text-align: center !important;
-    width: 100%;
+    padding: 0px 0px;
   }
 
   .base-btn {

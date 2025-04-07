@@ -517,6 +517,11 @@
   padding: 0px 20px 20px;
 }
 
+@media only screen and (max-width: 1506px) {
+  .company-title h4 {
+    font-size: 100px;
+  }
+}
 /* Add responsive styles for company pages */
 @media only screen and (max-width: 991px) {
   .company-title h4 {
